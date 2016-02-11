@@ -1,0 +1,25 @@
+{
+  "name": "joe-cycles",
+  "description": "The Joe Cycles website",
+  "main": "app.js",
+  "authors": [
+    "Kris Bulté"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "cycle",
+    "store"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
