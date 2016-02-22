@@ -28,7 +28,17 @@ gulp.task('inject', function () {
         ignorePath: '../../public'
     };
     
+    //inject local dependencies via gulp-inject where it finds comment <!-- inject:js -->
+                                                                     //<!-- inject:css -->
+                                                                     //<!-- endinject -->
+    var inject = require('gulp-inject');
+    var injectSrc = gulp.src(['./public/css/*.css', './public/js/*.js'], { read: false });
+    var injectOptions = {
+        ignorePath: '/public'
+    };
+    
     return gulp.src('./src/views/*.ejs')
         .pipe(wiredep(options))
+        .pipe(inject(injectSrc, injectOptions))
         .pipe(gulp.dest('./src/views'));
 });
