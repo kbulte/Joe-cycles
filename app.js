@@ -5,6 +5,7 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
+app.use(express.static('fonts'));
 
 app.get('/', function(req, res){
         res.render('index');
