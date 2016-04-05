@@ -252,9 +252,9 @@ header .header-content .header-content-inner p {
     }
 }
 
-.service-box p {
-    /*margin-bottom: 0;*/
-}
+/*.service-box p {
+    margin-bottom: 0;
+}*/
 
 .portfolio-box {
     display: block;
@@ -404,7 +404,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
     border-color: #1576B3;
     color: #fff;
-    background-color: #1576B3f05f40;
+    background-color: #1576B3;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
