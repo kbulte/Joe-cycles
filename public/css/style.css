@@ -10,7 +10,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #f05f40;
+    border-color: #1576B3;
     border-width: 3px;
 }
 
@@ -49,6 +49,10 @@ p {
     background-color: #f05f40;
 }
 
+.bg-joecycles {
+    background-color: #1576B3;
+}
+
 .bg-dark {
     color: #fff;
     background-color: #222;
@@ -83,12 +87,12 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #f05f40;
+    color: #1576B3;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #1576B3;
 }
 
 .navbar-default .nav > li>a,
@@ -101,12 +105,12 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: #1576B3;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: #1576B3!important;
     background-color: transparent;
 }
 
@@ -147,7 +151,7 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #f05f40;
+        color: #1576B3;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -162,7 +166,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: #1576B3;
     }
 }
 
@@ -334,6 +338,11 @@ header .header-content .header-content-inner p {
     color: #f05f40;
 }
 
+.text-joecycles {
+    color: #1576B3;
+}
+
+
 .no-gutter > [class*=col-] {
     padding-right: 0;
     padding-left: 0;
@@ -393,9 +402,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
+    border-color: #1576B3;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #1576B3f05f40;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -407,9 +416,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #1576B3;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #1576B3;
 }
 
 .btn-primary:active,
@@ -436,8 +445,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #f05f40;
-    background-color: #f05f40;
+    border-color: #2a8bc8;
+    background-color: #2a8bc8;
 }
 
 .btn-primary .badge {
