@@ -503,3 +503,17 @@ body {
     margin: 0 auto !important;
     float: none !important;
 }
+
+.main-content{
+    padding:16px;
+}
+
+.question-form-header{
+    color: #1576B3;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+}
