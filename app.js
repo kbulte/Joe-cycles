@@ -3,16 +3,18 @@ var bodyParser = require('body-parser');
 var validator = require('express-validator');
 var app = express();
 var mailer = require('express-mailer');
+var mailbox = process.env.mailbox;
+var mailpassword = process.env.mailpassword;
 
 mailer.extend(app, {
-  from: 'joecycles@joecycles.be',
-  host: '', // hostname 
-  secureConnection: true, // use SSL 
+  from: mailbox,
+  host: 'smtp.telenet.be', // hostname 
+  secureConnection: false, // use SSL 
   port: 587, // port for secure SMTP 
   transportMethod: 'SMTP', // default is SMTP. Accepts anything that nodemailer accepts 
   auth: {
-    user: '',
-    pass: ''
+    user: mailbox,
+    pass: mailpassword
   }
 });
 
@@ -41,18 +43,19 @@ app.post('/stuur-een-mail', function(req, res) {
         return;
     } else {
         app.mailer.send('email', {
-            to: '', // REQUIRED. This can be a comma delimited string just like a normal email to field.  
+            to: mailbox, // REQUIRED. This can be a comma delimited string just like a normal email to field.  
             subject: 'Joe Cycles website vraag',
-            otherProperty: 'Other Property' // All additional properties are also passed to the template as local variables. 
+            name: req.body.name,
+            sender: req.body.email,
+            message: req.body.question
             }, function (err) {
                 if (err) {
                     console.log(err);
                     res.send('There was an error sending the email');
                     return;
                 }
-                res.send('Email Sent');
+                res.redirect('/');
             });
-            res.redirect('/');
     }
 });
 
