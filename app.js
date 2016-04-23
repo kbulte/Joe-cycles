@@ -3,8 +3,8 @@ var bodyParser = require('body-parser');
 var validator = require('express-validator');
 var app = express();
 var mailer = require('express-mailer');
-var mailbox = process.env.mailbox;
-var mailpassword = process.env.mailpassword;
+var mailbox = process.env['mailbox'];
+var mailpassword = process.env['mailpassword'];
 
 mailer.extend(app, {
   from: mailbox,
