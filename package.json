@@ -24,7 +24,8 @@
     "body-parser": "^1.15.0",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
-    "express-mailer": "^0.3.0"
+    "express-mailer": "^0.3.0",
+    "express-validator": "^2.20.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
