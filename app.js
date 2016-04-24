@@ -68,7 +68,7 @@ app.get('/', function(req, res){
                 3: { open: 16 , closed: 20},
                 4: { open: 16 , closed: 20},
                 5: { open: 0 , closed: 0},
-                6: { open: 16 , closed: 18},
+                6: { open: 0 , closed: 0},
                 0: { open: 0 , closed: 0},
             };
             
