@@ -18,6 +18,18 @@ hr.light {
     border-color: #fff;
 }
 
+ul {
+  padding:0 0 0 0;
+  margin:0 0 0 0;
+}
+ul li {
+  list-style:none;
+  margin-bottom:25px;
+}
+ul li img {
+  cursor: pointer;
+}
+
 a {
     color: #f05f40;
     -webkit-transition: all .35s;
